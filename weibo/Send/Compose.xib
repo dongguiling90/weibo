@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ComposeTabBarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Av-Iu-pcq" userLabel="pictureButton">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="64"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwA-3X-IdI">
+                    <rect key="frame" x="75" y="0.0" width="75" height="64"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tet-TC-H2j">
+                    <rect key="frame" x="150" y="0.0" width="75" height="64"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tK-v0-g7F">
+                    <rect key="frame" x="225" y="0.0" width="75" height="64"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-C4-jNV">
+                    <rect key="frame" x="300" y="0.0" width="75" height="64"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tet-TC-H2j" firstAttribute="leading" secondItem="qwA-3X-IdI" secondAttribute="trailing" id="256-rj-rQf"/>
+                <constraint firstItem="tet-TC-H2j" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="1/5" id="7G5-Nf-8Ce"/>
+                <constraint firstItem="CEW-C4-jNV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Aql-9z-pGV"/>
+                <constraint firstItem="2tK-v0-g7F" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Chu-fj-nKw"/>
+                <constraint firstItem="6Av-Iu-pcq" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="1/5" id="Dr3-2Q-phf"/>
+                <constraint firstItem="tet-TC-H2j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Jxi-Ku-Tnt"/>
+                <constraint firstItem="6Av-Iu-pcq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Wkt-N5-0BF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qwA-3X-IdI" secondAttribute="bottom" id="XWg-ai-ODM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tet-TC-H2j" secondAttribute="bottom" id="YKS-US-SFI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2tK-v0-g7F" secondAttribute="bottom" id="f62-XM-ads"/>
+                <constraint firstItem="qwA-3X-IdI" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="1/5" id="fOh-Wh-zcx"/>
+                <constraint firstItem="qwA-3X-IdI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fdh-UH-pAf"/>
+                <constraint firstItem="qwA-3X-IdI" firstAttribute="leading" secondItem="6Av-Iu-pcq" secondAttribute="trailing" id="gHT-2w-xfc"/>
+                <constraint firstItem="6Av-Iu-pcq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lgm-rL-eoV"/>
+                <constraint firstItem="CEW-C4-jNV" firstAttribute="leading" secondItem="2tK-v0-g7F" secondAttribute="trailing" id="nVy-XB-MmM"/>
+                <constraint firstItem="CEW-C4-jNV" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="1/5" id="qcR-07-Dyi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6Av-Iu-pcq" secondAttribute="bottom" id="rQC-Px-jd7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CEW-C4-jNV" secondAttribute="bottom" id="sSf-rb-yQz"/>
+                <constraint firstItem="2tK-v0-g7F" firstAttribute="leading" secondItem="tet-TC-H2j" secondAttribute="trailing" id="uRU-Zp-ey6"/>
+                <constraint firstItem="2tK-v0-g7F" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="1/5" id="v9r-T4-sOf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53"/>
+        </view>
+    </objects>
+</document>

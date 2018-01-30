@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DCL-dU-elU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发微博-->
+        <scene sceneID="QPo-9o-gK7">
+            <objects>
+                <viewController id="OK5-SK-Wdw" customClass="SendViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SVr-em-Xwf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J1v-XQ-17j">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qf0-jw-2Gm">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QPw-Hi-jvQ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem image="compose_toolbar_picture" width="30" id="5E6-xb-xrT"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="O8A-nK-yyd"/>
+                                    <barButtonItem image="compose_mentionbutton_background" width="30" id="jzQ-xA-6HB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ugc-Y8-2ym"/>
+                                    <barButtonItem image="compose_trendbutton_background" width="30" id="5aL-Ur-N4R"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bWv-e2-YxM"/>
+                                    <barButtonItem image="compose_emoticonbutton_background" width="30" id="atp-ht-njD"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0wI-ww-2B1"/>
+                                    <barButtonItem image="compose_camerabutton_background" width="30" id="El1-ln-kP9"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qf0-jw-2Gm" firstAttribute="leading" secondItem="SVr-em-Xwf" secondAttribute="leading" id="5Zu-89-0ec"/>
+                            <constraint firstAttribute="trailing" secondItem="qf0-jw-2Gm" secondAttribute="trailing" id="OGC-fY-6uB"/>
+                            <constraint firstItem="3xz-Cd-QeI" firstAttribute="bottom" secondItem="J1v-XQ-17j" secondAttribute="bottom" id="Uvi-nQ-UhJ"/>
+                            <constraint firstItem="J1v-XQ-17j" firstAttribute="leading" secondItem="3xz-Cd-QeI" secondAttribute="leading" id="e0F-Ey-kLo"/>
+                            <constraint firstItem="J1v-XQ-17j" firstAttribute="top" secondItem="3xz-Cd-QeI" secondAttribute="top" id="fBm-4U-zC2"/>
+                            <constraint firstAttribute="bottom" secondItem="qf0-jw-2Gm" secondAttribute="bottom" id="llD-8R-wpK"/>
+                            <constraint firstItem="3xz-Cd-QeI" firstAttribute="trailing" secondItem="J1v-XQ-17j" secondAttribute="trailing" id="zDF-KU-Lym"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3xz-Cd-QeI"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="发微博" id="aJj-vF-j4r">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Cpb-Ow-bqE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lrf-Fd-Px4">
+                                <rect key="frame" x="16" y="7.5" width="30" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="OK5-SK-Wdw" eventType="touchUpInside" id="Ow2-d3-Ozq"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Hfp-Zv-Dvz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gU9-rv-dtS">
+                                <rect key="frame" x="329" y="7.5" width="30" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="发送">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="OK5-SK-Wdw" eventType="touchUpInside" id="ZEt-j2-ii2"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTb-Ia-cUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="-1522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B8F-6F-4Pz">
+            <objects>
+                <navigationController id="DCL-dU-elU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lEE-7c-f8f">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OK5-SK-Wdw" kind="relationship" relationship="rootViewController" id="vNq-fa-v5Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="259-1L-06D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-1522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compose_camerabutton_background" width="24" height="24"/>
+        <image name="compose_emoticonbutton_background" width="24" height="24"/>
+        <image name="compose_mentionbutton_background" width="24" height="24"/>
+        <image name="compose_toolbar_picture" width="24" height="24"/>
+        <image name="compose_trendbutton_background" width="24" height="24"/>
+    </resources>
+</document>

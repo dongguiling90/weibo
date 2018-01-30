@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MuE-d5-JTh" customClass="SearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riP-VU-kzP">
+                    <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PyA-2h-P6z">
+                            <rect key="frame" x="5" y="5" width="320" height="30"/>
+                            <color key="backgroundColor" red="0.84413337440000002" green="0.84413337440000002" blue="0.84413337440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JP-BS-zvM">
+                            <rect key="frame" x="325" y="5" width="50" height="30"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelClick:" destination="MuE-d5-JTh" eventType="touchUpInside" id="dTk-Yq-EE8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6JP-BS-zvM" firstAttribute="leading" secondItem="PyA-2h-P6z" secondAttribute="trailing" id="1fv-zm-AF5"/>
+                        <constraint firstItem="PyA-2h-P6z" firstAttribute="centerY" secondItem="riP-VU-kzP" secondAttribute="centerY" id="81x-yC-JBu"/>
+                        <constraint firstItem="6JP-BS-zvM" firstAttribute="centerY" secondItem="riP-VU-kzP" secondAttribute="centerY" id="Fi2-95-W5Z"/>
+                        <constraint firstItem="PyA-2h-P6z" firstAttribute="leading" secondItem="riP-VU-kzP" secondAttribute="leading" constant="5" id="Sc8-dh-qdC"/>
+                        <constraint firstAttribute="height" constant="40" id="UYT-0S-idV"/>
+                        <constraint firstAttribute="trailing" secondItem="PyA-2h-P6z" secondAttribute="trailing" constant="50" id="kI8-lf-zxd"/>
+                        <constraint firstAttribute="trailing" secondItem="6JP-BS-zvM" secondAttribute="trailing" id="okh-yJ-AU9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="U1Y-rU-jwc" firstAttribute="trailing" secondItem="riP-VU-kzP" secondAttribute="trailing" id="578-uN-77I"/>
+                <constraint firstItem="riP-VU-kzP" firstAttribute="leading" secondItem="U1Y-rU-jwc" secondAttribute="leading" id="uHM-oj-Bab"/>
+                <constraint firstItem="riP-VU-kzP" firstAttribute="top" secondItem="U1Y-rU-jwc" secondAttribute="top" id="vdL-7c-eCa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="U1Y-rU-jwc"/>
+            <connections>
+                <outlet property="textfield" destination="PyA-2h-P6z" id="itj-6T-uO9"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="-37"/>
+        </view>
+    </objects>
+</document>

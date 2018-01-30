@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发现导航 -->
+        <scene sceneID="3IX-iY-Jmt">
+            <objects>
+                <navigationController storyboardIdentifier="Discover" title="发现导航 " id="poT-ah-PXe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1kf-s2-brq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AII-1x-mgf" kind="relationship" relationship="rootViewController" id="zcz-i1-9d0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0k-hO-rLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="-28"/>
+        </scene>
+        <!--发现控制器-->
+        <scene sceneID="EBL-Ad-ZXR">
+            <objects>
+                <viewController title="发现控制器" id="AII-1x-mgf" customClass="DiscoverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAM-Ne-Zss">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vbc-IV-Zjm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.053123316359999999" green="1" blue="0.12937217349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vbc-IV-Zjm" firstAttribute="top" secondItem="oQz-cW-dsX" secondAttribute="top" id="7pr-n3-geY"/>
+                            <constraint firstItem="oQz-cW-dsX" firstAttribute="trailing" secondItem="vbc-IV-Zjm" secondAttribute="trailing" id="dLl-cW-TSC"/>
+                            <constraint firstItem="oQz-cW-dsX" firstAttribute="bottom" secondItem="vbc-IV-Zjm" secondAttribute="bottom" id="oME-Mu-eDe"/>
+                            <constraint firstItem="vbc-IV-Zjm" firstAttribute="leading" secondItem="oQz-cW-dsX" secondAttribute="leading" id="srL-Ud-rBr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oQz-cW-dsX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" selectedImage="tabbar_discover_selected" id="mSK-3C-zjg">
+                        <color key="badgeColor" red="1" green="0.96793250598093594" blue="0.98618187068305441" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="aU9-GQ-clj">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="baseTable" destination="vbc-IV-Zjm" id="Ay0-JJ-2Of"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ja-3J-1Hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_discover" width="30" height="30"/>
+        <image name="tabbar_discover_selected" width="30" height="30"/>
+    </resources>
+</document>
